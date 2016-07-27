@@ -43,7 +43,7 @@ If you do *not* agree with these terms, you must *not* make your contributions a
 **Q:** Can I contribute code or other material under a different license?  
 **A:** No. Any contributions *must* be made available under the [same license as the project](LICENSE.md).
 
-**Q:** What does your license even mean?
+**Q:** What does your license even mean?  
 **A:** The license sets out the terms under which you may use or reference this project. If you're in any doubt about it you should definitely consider seeking legal advice from a lawyer or other legal representative.
 
 Code of Conduct
