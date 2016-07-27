@@ -8,7 +8,7 @@ By contributing to any Zambezi open source project, you implicitly agree to the 
 Issues
 ------
 
-Issues and enhancement requests are very welcome, as well as general discussion. Please follow our code of conduct, as explained later in this document, by being respectful and inclusive in your contributions.
+Issues and enhancement requests are very welcome, as well as general discussion. Simply [create a new issue](//github.com/zambezi/project/issues/new) to get the discussion started!
 
 Contributing
 ------------
