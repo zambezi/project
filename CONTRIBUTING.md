@@ -34,13 +34,13 @@ If you do *not* agree with these terms, you must *not* make your contributions a
 
 ### FAQ
 
-**Q:** I'm contributing on behalf of my employer, is this ok?
+**Q:** I'm contributing on behalf of my employer, is this ok?  
 **A:** So long as you have the legal authority to make contributions and your employer agrees with the terms, we will happily accept contributions!
 
-**Q:** Can I contribute code or other material created by others?
+**Q:** Can I contribute code or other material created by others?  
 **A:** Maybe, but please *do not assume you can*. Any contributions you make must be made available under the [same license as the project](LICENSE.md) and you *must* make sure you have the legal authority to make this contribution. If in doubt, please refrain from contributing or contact the original author to get their explicit approval.
 
-**Q:** Can I contribute code or other material under a different license?
+**Q:** Can I contribute code or other material under a different license?  
 **A:** No. Any contributions *must* be made available under the [same license as the project](LICENSE.md).
 
 **Q:** What does your license even mean?
