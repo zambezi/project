@@ -6,21 +6,11 @@ Whenever you're starting a project, there are about a million questions that nee
 Usage
 -----
 
-Do *not* fork this project, unless you intend to actually [contribute changes](CONTRIBUTING.md) which is more than welcome!
+1. [Download the latest release](../../releases/latest)
+2. Extract the downloaded archive
+3. Follow the checklist below
 
-To create a new project:
-
-1. Clone (or download) this project: `git clone git@github.com:zambezi/project.git your-project`
-2. Enter your new project directory: `cd your-project`
-3. Start your own history: `rm -rf .git && git init`
-
-Or if you'd rather, you can use the following script. Just copy and paste into a shell. This will create a directory called `your-project` (unless you change the `NAME` variable before running the script) – rename this as you wish.
-
-```bash
-NAME=your-project sh -c 'git clone -q git@github.com:zambezi/project.git ${NAME} && cd ${NAME} && rm -rf .git && git init -q && echo "Initialized new project in: $(pwd)"'
-```
-
-Now that your project is created, follow the below checklist to get it in good shape for your first commit!
+Do *not* clone this project, unless you intend to actually [contribute changes](CONTRIBUTING.md) which is more than welcome!
 
 ### New project checklist
 
