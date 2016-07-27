@@ -6,11 +6,25 @@ Whenever you're starting a project, there are about a million questions that nee
 Usage
 -----
 
-To create a new project, download a copy of this (i.e. clone) and make the necessary changes (see below checklist.) Do *not* fork this project, unless you intend to actually [contribute changes](CONTRIBUTING.md) which is more than welcome!
+Do *not* fork this project, unless you intend to actually [contribute changes](CONTRIBUTING.md) which is more than welcome!
+
+To create a new project:
+
+1. Clone (or download) this project: `git clone git@github.com:zambezi/project.git your-project`
+2. Enter your new project directory: `cd your-project`
+3. Start your own history: `rm -rf .git && git init`
+
+Or if you'd rather, you can use the following script. Just copy and paste into a terminal window. This will create a directory called `your-project` (unless you change the `NAME` variable before running the script) – rename this as you wish.
+
+```bash
+NAME=your-project sh -c 'git clone -q git@github.com:zambezi/project.git ${NAME} && cd ${NAME} && rm -rf .git && git init -q && echo "Initialized new project in: $(pwd)"'
+```
+
+Now that your project is created, follow the below checklist to get it in good shape for your first commit!
 
 ### New project checklist
 
-You should follow this checklist when creating a new Zambezi open source project. The steps in this list should be considered mandatory, and the following section includes some information on additional files to keep an eye on.
+The steps in this list should be considered mandatory, and the following section includes some information on additional files to keep an eye on.
 
 - [ ] Name
 
