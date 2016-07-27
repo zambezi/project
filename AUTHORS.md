@@ -5,4 +5,4 @@ This project exists thanks to the tireless efforts of all who have contributed â
 
 ---
 
-[Full list of contributors](//github.com/zambezi/project/contributors).
+[Full list of contributors](../../contributors).
