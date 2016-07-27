@@ -1,4 +1,7 @@
-This project consists thanks to the tireless efforts of all who has contributed in one way or another. If you think this file should be updated, please edit it!
+Thank You!
+==========
+
+This project exists thanks to the tireless efforts of all who has contributed in one way or another – whether directly, or indirectly.
 
 ---
 
