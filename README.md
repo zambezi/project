@@ -37,21 +37,18 @@ You should follow this checklist when creating a new Zambezi open source project
 
 ### Files to keep updated
 
-- [SUMMARY](SUMMARY.md)    
-  This file is the summary of your project's documentation. Keep it concise. The default contents is a list of links – keep this, and add to it with sections relevant to your project. This effectively turns your summary into the sitemap of your documentation.
+- [SUMMARY](SUMMARY.md): This file is the summary of your project's documentation. Keep it concise. The default contents is a list of links – keep this, and add to it with sections relevant to your project. This effectively turns your summary into the sitemap of your documentation.
 
-- [AUTHORS](AUTHORS.md)
-  This file should list and thank the authors of your project, in whatever form is appropriate. By default it's a simple thank you notice, followed by a link to the full list of contributors as determined by the repository history. Expand this any way you see fit.
+- [AUTHORS](AUTHORS.md): This file should list and thank the authors of your project, in whatever form is appropriate. By default it's a simple thank you notice, followed by a link to the full list of contributors as determined by the repository history. Expand this any way you see fit.
 
-- [LICENSE](LICENSE.md)
-  By default, all Zambezi open source projects use the MIT license. Unless you're switching to an altogether different license, the only thing you should ever consider modifying in this file is the copyright notice – everything else should stay as it is.
+- [LICENSE](LICENSE.md): By default, all Zambezi open source projects use the MIT license. Unless you're switching to an altogether different license, the only thing you should ever consider modifying in this file is the copyright notice – everything else should stay as it is.
 
 Found an issue, or want to contribute?
 --------------------------------------
 
-If you find an issue, want to start a discussion on something related to this project, or have suggestions on how to improve it – please [create an issue](//github.com/zambezi/project/issues/new)!
+If you find an issue, want to start a discussion on something related to this project, or have suggestions on how to improve it? Please [create an issue](//github.com/zambezi/project/issues/new)!
 
-All contributions are welcome! Please refer to the [contribution guidelines](CONTRIBUTING.md) for more information.
+See an error and want to fix it? Want to add a file or otherwise make some changes? All contributions are welcome! Please refer to the [contribution guidelines](CONTRIBUTING.md) for more information.
 
 License
 -------
