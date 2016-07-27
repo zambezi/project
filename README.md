@@ -14,7 +14,7 @@ To create a new project:
 2. Enter your new project directory: `cd your-project`
 3. Start your own history: `rm -rf .git && git init`
 
-Or if you'd rather, you can use the following script. Just copy and paste into a terminal window. This will create a directory called `your-project` (unless you change the `NAME` variable before running the script) – rename this as you wish.
+Or if you'd rather, you can use the following script. Just copy and paste into a shell. This will create a directory called `your-project` (unless you change the `NAME` variable before running the script) – rename this as you wish.
 
 ```bash
 NAME=your-project sh -c 'git clone -q git@github.com:zambezi/project.git ${NAME} && cd ${NAME} && rm -rf .git && git init -q && echo "Initialized new project in: $(pwd)"'
