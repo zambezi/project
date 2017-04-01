@@ -44,6 +44,10 @@ This will use default values when generating files, and is good for when you pla
 
 The steps in this list should be considered mandatory, and the following section includes some information on additional files to keep an eye on.
 
+- [ ] Remove init script
+
+      The file `init` in the extracted directory is a script that guides you through this process, and is by far the easiest way to get started. If you do not wish to run this script, you should remove it altogether. If you *do* run the script, it will remove itself when it's done.
+
 - [ ] Name
 
       You may pick any name for your project, but as a guideline make sure it's concise and reasonably descriptive.
