@@ -36,11 +36,11 @@ This will use default values when generating files, and is good for when you pla
 
 1. [Download the latest release](../../releases/latest)
 2. Extract the downloaded archive
-3. Follow the checklist below
-
-Do *not* clone this project, unless you intend to actually [contribute changes](CONTRIBUTING.md) which is more than welcome!
+3. Run `./init` in the extracted directory – or – follow the checklist below
 
 #### New project checklist
+
+*NOTE: The easiest way to get started is to simply run the included initialization script. Just run `./init` in the directory where you extracted the release archive.*
 
 The steps in this list should be considered mandatory, and the following section includes some information on additional files to keep an eye on.
 
