@@ -6,13 +6,41 @@ Whenever you're starting a project, there are about a million questions that nee
 Usage
 -----
 
+There are three ways to generate a project using this template:
+
+- Interactively using the initialization guide
+- Automatically by initializing with default values
+- Downloading the latest release and editing files manually
+
+### Interactive project generation
+
+Run the following in a bash terminal, substituting `<directory>` with the directory you wish to create your project in:
+
+```bash
+git clone https://github.com/zambezi/project.git <directory> && <directory>/init
+```
+
+This will run the guide, which will take you through the process. Once it's done, cd in to `<directory>` and behold your glorious new project!
+
+### Automatic project generation
+
+This is similar to interactively generating a project, but you also add the `--default` flag with the script, like so:
+
+```bash
+git clone https://github.com/zambezi/project.git <directory> && <directory>/init --default
+```
+
+This will use default values when generating files, and is good for when you plan to add more information later.
+
+### Manually creating a project
+
 1. [Download the latest release](../../releases/latest)
 2. Extract the downloaded archive
 3. Follow the checklist below
 
 Do *not* clone this project, unless you intend to actually [contribute changes](CONTRIBUTING.md) which is more than welcome!
 
-### New project checklist
+#### New project checklist
 
 The steps in this list should be considered mandatory, and the following section includes some information on additional files to keep an eye on.
 
@@ -39,7 +67,8 @@ The steps in this list should be considered mandatory, and the following section
       
       When you create a project, think about why you're creating it. The [RATIONALE](RATIONALE.md) is your project's justification – its reason for being. You can make this how long and involved as you'd like, but should really discuss the goals and ambitions of the project. The big picture, as it were. Try to avoid sweating the small things like implementation details, so this document stands the test of time. This should be the document you hold up your work against and say: does this fit the bill?
 
-### Files to keep updated
+Files to keep updated
+---------------------
 
 - [SUMMARY](SUMMARY.md): This file is the summary of your project's documentation. Keep it concise. The default contents is a list of links – keep this, and add to it with sections relevant to your project. This effectively turns your summary into the sitemap of your documentation.
 
