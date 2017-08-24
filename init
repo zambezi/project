@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+set -euo pipefail
+shopt -s expand_aliases
+
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
+rm -rf .git init
+
+name="$(basename "$(dirname "${0}")")"
+desc=
+usage=
+
+alias page='clear && echo && fold -s -w 55'
+alias stop='echo && read -p "Press <enter> to continue."'
+
+input() {
+	prompt="${1}"
+	var="${2}"
+
+	echo
+
+	if [[ -z "${!var}" ]]; then
+		read -r -p "${prompt}: " val
+	else
+		read -r -p "${prompt} (${!var}): " val
+	fi
+
+	export "${var}"="${val:-${!var}}"
+}
+
+generate() {
+	cat <<-README > README.md
+		${name}
+		${name//?/=}
+
+		${desc:-"This project needs a description – [would you like to add one](CONTRIBUTING.md)?"}
+
+		Usage
+		-----
+
+		${usage:-"This project needs usage documentation – [would you like to add it](CONTRIBUTING.md)?"}
+
+		Found an issue, or want to contribute?
+		--------------------------------------
+
+		If you find an issue, want to start a discussion on something related to this project, or have suggestions on how to improve it? Please [create an issue](../../issues/new)!
+
+		See an error and want to fix it? Want to add a file or otherwise make some changes? All contributions are welcome! Please refer to the [contribution guidelines](CONTRIBUTING.md) for more information.
+
+		License
+		-------
+
+		Please refer to the [license](LICENSE.md) for more information on licensing and copyright information.
+	README
+
+	cat <<-RATIONALE > RATIONALE.md
+		${name}
+		${name//?/=}
+
+		${desc:-"When you create a project, think about why you're creating it. The [RATIONALE](RATIONALE.md) is your project's justification – its reason for being. You can make this how long and involved as you'd like, but should really discuss the goals and ambitions of the project. The big picture, as it were. Try to avoid sweating the small things like implementation details, so this document stands the test of time. This should be the document you hold up your work against and say: does this fit the bill?"}
+	RATIONALE
+
+	git init -q
+	git add -A .
+	git commit -q -m "Initial commit."
+
+	exit
+}
+
+if [[ "${1:-}" == "--default" ]]; then
+	generate
+fi
+
+trap generate SIGINT
+
+page <<-PROLOGUE
+	Welcome to the Zambezi project generator!
+
+	This guide will help you get started with a project boilerplate, including some helpful documentation, licensing, and others.
+
+	You'll be presented with these questions:
+
+	- What is the name of your project?
+	- What is this project anyway?
+	- How do I consume this project?
+
+	Each question will ask for your input, and you're encouraged to fill this out. Default values will be presented within brackets. However, you may skip all of this simply by pressing the enter key until the guide ends, or just pressing Ctrl-C to exit right away.
+PROLOGUE
+
+stop
+
+page <<-NAME
+	What is the name of your project?
+
+	You may pick any name for your project, but as a guideline make sure it's concise and reasonably descriptive.
+NAME
+
+input "Name" name
+
+page <<-DESCRIPTION
+	What is this project anyway?
+
+	Please write a short introductory paragraph as a summary of your project.
+DESCRIPTION
+
+input "Description" desc
+
+page <<-USAGE
+	How do I consume this project?
+
+	Please write any instructions on how to use your project. If there is more than can fit in a line or simple step-by-step list, then summarize and link to further documentation.
+USAGE
+
+input "Usage" usage
+
+generate
+
+page <<-EPILOGUE
+	All done – happy developing!
+EPILOGUE
